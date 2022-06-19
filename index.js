@@ -3,7 +3,7 @@ const cors = require("cors")
 const routerApi = require("./routes")
 const { logErrors,errorHandler } = require("./middlewares/errorHandle")
 const app = express();
-const port = process.event.PORT || 3000;
+const port = process.env.PORT || 3000;
 // const port =  3000;
 
 app.use(express.json());
